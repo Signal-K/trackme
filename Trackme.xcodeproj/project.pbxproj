@@ -14,6 +14,11 @@
 		B5FBDD652DD57FC200AAAA10 /* TrackmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD642DD57FC200AAAA10 /* TrackmeTests.swift */; };
 		B5FBDD6F2DD57FC200AAAA10 /* TrackmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD6E2DD57FC200AAAA10 /* TrackmeUITests.swift */; };
 		B5FBDD712DD57FC200AAAA10 /* TrackmeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD702DD57FC200AAAA10 /* TrackmeUITestsLaunchTests.swift */; };
+		B5FBDD892DD581F200AAAA10 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD882DD581F200AAAA10 /* UIExtension.swift */; };
+		B5FBDD8B2DD584B500AAAA10 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD8A2DD584B500AAAA10 /* WelcomeView.swift */; };
+		B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */; };
+		B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */; };
+		B5FBDD922DD58DCD00AAAA10 /* SocialSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		B5FBDD6A2DD57FC200AAAA10 /* TrackmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBDD6E2DD57FC200AAAA10 /* TrackmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmeUITests.swift; sourceTree = "<group>"; };
 		B5FBDD702DD57FC200AAAA10 /* TrackmeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5FBDD882DD581F200AAAA10 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		B5FBDD8A2DD584B500AAAA10 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,12 @@
 		B5FBDD522DD57FC100AAAA10 /* Trackme */ = {
 			isa = PBXGroup;
 			children = (
+				B5FBDD872DD5806E00AAAA10 /* Model */,
+				B5FBDD822DD5803100AAAA10 /* UICommon */,
+				B5FBDD812DD5802C00AAAA10 /* Common */,
+				B5FBDD7F2DD5800900AAAA10 /* ViewModel */,
+				B5FBDD7E2DD5800000AAAA10 /* View */,
+				B5FBDD7D2DD57FE800AAAA10 /* Font */,
 				B5FBDD532DD57FC100AAAA10 /* TrackmeApp.swift */,
 				B5FBDD552DD57FC100AAAA10 /* ContentView.swift */,
 				B5FBDD572DD57FC200AAAA10 /* Assets.xcassets */,
@@ -125,6 +141,77 @@
 				B5FBDD702DD57FC200AAAA10 /* TrackmeUITestsLaunchTests.swift */,
 			);
 			path = TrackmeUITests;
+			sourceTree = "<group>";
+		};
+		B5FBDD7D2DD57FE800AAAA10 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		B5FBDD7E2DD5800000AAAA10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDD852DD5804B00AAAA10 /* Main */,
+				B5FBDD842DD5804300AAAA10 /* Home */,
+				B5FBDD832DD5803A00AAAA10 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5FBDD7F2DD5800900AAAA10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5FBDD812DD5802C00AAAA10 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B5FBDD822DD5803100AAAA10 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDD882DD581F200AAAA10 /* UIExtension.swift */,
+				B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */,
+				B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		B5FBDD832DD5803A00AAAA10 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDD8A2DD584B500AAAA10 /* WelcomeView.swift */,
+				B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5FBDD842DD5804300AAAA10 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B5FBDD852DD5804B00AAAA10 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5FBDD872DD5806E00AAAA10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */,
 				B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */,
+				B5FBDD892DD581F200AAAA10 /* UIExtension.swift in Sources */,
+				B5FBDD922DD58DCD00AAAA10 /* SocialSignupView.swift in Sources */,
+				B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */,
 				B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */,
+				B5FBDD8B2DD584B500AAAA10 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
