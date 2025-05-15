@@ -19,6 +19,25 @@
 		B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */; };
 		B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */; };
 		B5FBDD922DD58DCD00AAAA10 /* SocialSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */; };
+		B5FBDD942DD5927B00AAAA10 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD932DD5927B00AAAA10 /* SignupView.swift */; };
+		B5FBDD962DD5930700AAAA10 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD952DD5930700AAAA10 /* RoundTextField.swift */; };
+		B5FBDD982DD5977200AAAA10 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD972DD5977200AAAA10 /* SignInView.swift */; };
+		B5FBDD9B2DD59DA900AAAA10 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */; };
+		B5FBDD9D2DD59E2B00AAAA10 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */; };
+		B5FBDD9F2DD5A8F600AAAA10 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDD9E2DD5A8F600AAAA10 /* Auth */; };
+		B5FBDDA12DD5A8F600AAAA10 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDDA02DD5A8F600AAAA10 /* Functions */; };
+		B5FBDDA32DD5A8F600AAAA10 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDDA22DD5A8F600AAAA10 /* PostgREST */; };
+		B5FBDDA52DD5A8F600AAAA10 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDDA42DD5A8F600AAAA10 /* Realtime */; };
+		B5FBDDA72DD5A8F600AAAA10 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDDA62DD5A8F600AAAA10 /* Storage */; };
+		B5FBDDA92DD5A95400AAAA10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDA82DD5A95400AAAA10 /* HomeView.swift */; };
+		B5FBDDAB2DD5A9B900AAAA10 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDAA2DD5A9B900AAAA10 /* SubscriptionModel.swift */; };
+		B5FBDDAD2DD5AB1600AAAA10 /* ArcShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDAC2DD5AB1600AAAA10 /* ArcShape.swift */; };
+		B5FBDDAF2DD5AEA300AAAA10 /* StatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDAE2DD5AEA300AAAA10 /* StatusButton.swift */; };
+		B5FBDDB12DD5B09700AAAA10 /* SegmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDB02DD5B09700AAAA10 /* SegmentButton.swift */; };
+		B5FBDDB32DD5B22000AAAA10 /* UpcomingBillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDB22DD5B22000AAAA10 /* UpcomingBillRow.swift */; };
+		B5FBDDB62DD5B71700AAAA10 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDB52DD5B71700AAAA10 /* MainTabView.swift */; };
+		B5FBDDB92DD5B77D00AAAA10 /* BudgetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDB82DD5B77D00AAAA10 /* BudgetsView.swift */; };
+		B5FBDDBB2DD5B7B600AAAA10 /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDDBA2DD5B7B600AAAA10 /* BudgetModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +73,20 @@
 		B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignupView.swift; sourceTree = "<group>"; };
+		B5FBDD932DD5927B00AAAA10 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		B5FBDD952DD5930700AAAA10 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		B5FBDD972DD5977200AAAA10 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		B5FBDDA82DD5A95400AAAA10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B5FBDDAA2DD5A9B900AAAA10 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
+		B5FBDDAC2DD5AB1600AAAA10 /* ArcShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcShape.swift; sourceTree = "<group>"; };
+		B5FBDDAE2DD5AEA300AAAA10 /* StatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusButton.swift; sourceTree = "<group>"; };
+		B5FBDDB02DD5B09700AAAA10 /* SegmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentButton.swift; sourceTree = "<group>"; };
+		B5FBDDB22DD5B22000AAAA10 /* UpcomingBillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingBillRow.swift; sourceTree = "<group>"; };
+		B5FBDDB52DD5B71700AAAA10 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B5FBDDB82DD5B77D00AAAA10 /* BudgetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsView.swift; sourceTree = "<group>"; };
+		B5FBDDBA2DD5B7B600AAAA10 /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +94,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FBDDA32DD5A8F600AAAA10 /* PostgREST in Frameworks */,
+				B5FBDDA12DD5A8F600AAAA10 /* Functions in Frameworks */,
+				B5FBDD9F2DD5A8F600AAAA10 /* Auth in Frameworks */,
+				B5FBDDA72DD5A8F600AAAA10 /* Storage in Frameworks */,
+				B5FBDDA52DD5A8F600AAAA10 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +152,7 @@
 				B5FBDD552DD57FC100AAAA10 /* ContentView.swift */,
 				B5FBDD572DD57FC200AAAA10 /* Assets.xcassets */,
 				B5FBDD592DD57FC200AAAA10 /* Preview Content */,
+				B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */,
 			);
 			path = Trackme;
 			sourceTree = "<group>";
@@ -153,7 +192,8 @@
 		B5FBDD7E2DD5800000AAAA10 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5FBDD852DD5804B00AAAA10 /* Main */,
+				B5FBDDB72DD5B77200AAAA10 /* Budgets */,
+				B5FBDDB42DD5B70800AAAA10 /* MainTab */,
 				B5FBDD842DD5804300AAAA10 /* Home */,
 				B5FBDD832DD5803A00AAAA10 /* Login */,
 			);
@@ -180,6 +220,11 @@
 				B5FBDD882DD581F200AAAA10 /* UIExtension.swift */,
 				B5FBDD8D2DD58B8100AAAA10 /* PrimaryButton.swift */,
 				B5FBDD8F2DD58D0B00AAAA10 /* SecondaryButton.swift */,
+				B5FBDD952DD5930700AAAA10 /* RoundTextField.swift */,
+				B5FBDDAC2DD5AB1600AAAA10 /* ArcShape.swift */,
+				B5FBDDAE2DD5AEA300AAAA10 /* StatusButton.swift */,
+				B5FBDDB02DD5B09700AAAA10 /* SegmentButton.swift */,
+				B5FBDDB22DD5B22000AAAA10 /* UpcomingBillRow.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -189,6 +234,9 @@
 			children = (
 				B5FBDD8A2DD584B500AAAA10 /* WelcomeView.swift */,
 				B5FBDD912DD58DCD00AAAA10 /* SocialSignupView.swift */,
+				B5FBDD932DD5927B00AAAA10 /* SignupView.swift */,
+				B5FBDD972DD5977200AAAA10 /* SignInView.swift */,
+				B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -196,22 +244,34 @@
 		B5FBDD842DD5804300AAAA10 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B5FBDDA82DD5A95400AAAA10 /* HomeView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		B5FBDD852DD5804B00AAAA10 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		B5FBDD872DD5806E00AAAA10 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5FBDDAA2DD5A9B900AAAA10 /* SubscriptionModel.swift */,
+				B5FBDDBA2DD5B7B600AAAA10 /* BudgetModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B5FBDDB42DD5B70800AAAA10 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDDB52DD5B71700AAAA10 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		B5FBDDB72DD5B77200AAAA10 /* Budgets */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDDB82DD5B77D00AAAA10 /* BudgetsView.swift */,
+			);
+			path = Budgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +290,13 @@
 			dependencies = (
 			);
 			name = Trackme;
+			packageProductDependencies = (
+				B5FBDD9E2DD5A8F600AAAA10 /* Auth */,
+				B5FBDDA02DD5A8F600AAAA10 /* Functions */,
+				B5FBDDA22DD5A8F600AAAA10 /* PostgREST */,
+				B5FBDDA42DD5A8F600AAAA10 /* Realtime */,
+				B5FBDDA62DD5A8F600AAAA10 /* Storage */,
+			);
 			productName = Trackme;
 			productReference = B5FBDD502DD57FC100AAAA10 /* Trackme.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +369,9 @@
 				Base,
 			);
 			mainGroup = B5FBDD472DD57FC100AAAA10;
+			packageReferences = (
+				B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = B5FBDD512DD57FC100AAAA10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,12 +414,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FBDDAB2DD5A9B900AAAA10 /* SubscriptionModel.swift in Sources */,
+				B5FBDDAD2DD5AB1600AAAA10 /* ArcShape.swift in Sources */,
 				B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */,
+				B5FBDDBB2DD5B7B600AAAA10 /* BudgetModel.swift in Sources */,
+				B5FBDDB12DD5B09700AAAA10 /* SegmentButton.swift in Sources */,
 				B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */,
+				B5FBDDB62DD5B71700AAAA10 /* MainTabView.swift in Sources */,
+				B5FBDDA92DD5A95400AAAA10 /* HomeView.swift in Sources */,
+				B5FBDD9D2DD59E2B00AAAA10 /* AuthView.swift in Sources */,
 				B5FBDD892DD581F200AAAA10 /* UIExtension.swift in Sources */,
 				B5FBDD922DD58DCD00AAAA10 /* SocialSignupView.swift in Sources */,
+				B5FBDD982DD5977200AAAA10 /* SignInView.swift in Sources */,
+				B5FBDD942DD5927B00AAAA10 /* SignupView.swift in Sources */,
 				B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */,
+				B5FBDD9B2DD59DA900AAAA10 /* Supabase.swift in Sources */,
+				B5FBDDB32DD5B22000AAAA10 /* UpcomingBillRow.swift in Sources */,
 				B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */,
+				B5FBDDAF2DD5AEA300AAAA10 /* StatusButton.swift in Sources */,
+				B5FBDDB92DD5B77D00AAAA10 /* BudgetsView.swift in Sources */,
+				B5FBDD962DD5930700AAAA10 /* RoundTextField.swift in Sources */,
 				B5FBDD8B2DD584B500AAAA10 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,6 +758,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5FBDD9E2DD5A8F600AAAA10 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B5FBDDA02DD5A8F600AAAA10 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B5FBDDA22DD5A8F600AAAA10 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B5FBDDA42DD5A8F600AAAA10 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B5FBDDA62DD5A8F600AAAA10 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5FBDD482DD57FC100AAAA10 /* Project object */;
 }

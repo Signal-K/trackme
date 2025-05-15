@@ -8,132 +8,114 @@
 import SwiftUI
 
 struct SocialSignupView: View {
-    @State var showSignUp: Bool = false
-    
+    @State private var navigationPath = NavigationPath()
+
+    enum Destination: Hashable {
+        case emailSignup
+    }
+
     var body: some View {
-        ZStack {
-            VStack {
-                Image("app_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: .widthPer(per: 0.5))
-                    .padding(.top, .topInsets + 8)
-                
-                Spacer()
-                
-                Button {
-                    
-                } label {
-                    ZStack {
-                        Image("apple_btn")
+        NavigationStack(path: $navigationPath) {
+            GeometryReader { geo in
+                ZStack {
+                    Color.grayC.ignoresSafeArea()
+
+                    VStack(spacing: geo.size.height * 0.025) {
+                        Spacer(minLength: geo.safeAreaInsets.top + 20)
+
+                        Image("app_logo")
                             .resizable()
-                            .scaledToFill()
-                            .padding(.horizontal, 20)
-                            .frame(width: .screenWidth, height: 48)
-                        
-                        HStack {
-                            Image("apple")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 15, height: 15)
-                            
-                            Text("Sign up with Apple")
+                            .scaledToFit()
+                            .frame(width: geo.size.width * 0.5)
+
+                        Spacer()
+
+                        socialButton(
+                            backgroundImage: "apple_btn",
+                            icon: "apple",
+                            text: "Sign up with Apple",
+                            foregroundColor: .white,
+                            width: geo.size.width * 0.85
+                        )
+
+                        socialButton(
+                            backgroundImage: "google_btn",
+                            icon: "google",
+                            text: "Sign up with Google",
+                            foregroundColor: .grayC,
+                            width: geo.size.width * 0.85
+                        )
+
+                        socialButton(
+                            backgroundImage: "fb_btn",
+                            icon: "fb",
+                            text: "Sign up with Facebook",
+                            foregroundColor: .white,
+                            width: geo.size.width * 0.85
+                        )
+
+                        Text("or")
+                            .font(.system(size: geo.size.width * 0.04))
+                            .foregroundColor(.white)
+                            .padding(.top, geo.size.height * 0.01)
+
+                        SecondaryButton(title: "Sign up with email") {
+                            navigationPath.append(Destination.emailSignup)
                         }
-                        .padding(.horizontal, 20)
-                    }
-                }
-                
-                .foregroundColor(.white)
-                .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
-                .padding(.bottom, 15)
-                
-                Button {
-                    
-                } label: {
-                    ZStack {
-                        Image("google_btn")
-                            .resizable()
-                            .scaledToFill()
+
+                        Text("By registering, you agree to our Terms of Use. Learn how we collect, use and share your data.")
+                            .font(.system(size: geo.size.width * 0.035))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.gray60)
                             .padding(.horizontal, 20)
-                            .frame(width: .screenWidth, height: 48)
-                        
-                        HStack {
-                            Image("google")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 15, height: 15)
-                            
-                            Text("Sign up with Google")
-                        }
-                        .padding(.horizontal, 20)
+                            .padding(.bottom, geo.safeAreaInsets.bottom + 10)
                     }
+                    .frame(width: geo.size.width)
                 }
-                
-                .foregroundColor(.grayC)
-                .shadow(color: .white.opacity(0.3), radius: 5, y: 3)
-                .padding(.bottom, 15)
-                
-                Button {
-                    
-                } label: {
-                    ZStack {
-                        Image("fb_btn")
-                            .resizable()
-                            .scaledToFill()
-                            .padding(.horizontal, 20)
-                            .frame(width: .screenWidth, height: 48)
-                        
-                        HStack {
-                            Image("fb")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 15, height: 15)
-                            
-                            Text("Sign up with Facebook")
-                        }
-                        .padding(.horizontal, 20)
-                    }
+            }
+            .navigationBarHidden(true)
+            .navigationDestination(for: Destination.self) { destination in
+                switch destination {
+                case .emailSignup:
+                    SignUpView()
                 }
-                
-                .foregroundColor(.white)
-                .shadow(color: .blue.opacity(0.3), radius: 5, y: 3)
-                .padding(.bottom, 25)
-                
-                Text("or")
-                    .multilineTextAlignment(.center)
-                    .font(.customfont(.regular, fontSize: 15))
-                    .padding(.horizontal, 20)
-                    .foregroundColor(.white)
-                    .padding(.bottom, 25)
-                
-                SecondaryButton(title: "Sign up with email", onPressed: {
-                    showSignUp.toggle()
-                })
-                .background( NavigationLink(destination: SignUpView(), isActive: $showSignUp, label: {
-                    EmptyView()
-                }) )
-                
-                .padding(.bottom, 20)
-                
-                Text("By registering, you agree to our Terms of Use. Learn how we collect, use and share your data.")
-                    .multilineTextAlignment(.center)
-                    .font(.customfont(.regular, fontSize: 14))
-                    .padding(.horizontal, 20)
-                    .foregroundColor(.gray60)
-                    .padding(.bottom, .bottomInsets + 8)
             }
         }
-        
-        .navigationTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden()
-        .ignoresSafeArea()
-        .background(Color.grayC)
+    }
+
+    private func socialButton(backgroundImage: String, icon: String, text: String, foregroundColor: Color, width: CGFloat) -> some View {
+        Button {
+            // Handle social signup action
+        } label: {
+            ZStack {
+                Image(backgroundImage)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: width, height: 50)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+
+                HStack(spacing: 10) {
+                    Image(icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 18, height: 18)
+
+                    Text(text)
+                        .font(.system(size: width * 0.045, weight: .semibold))
+                }
+                .padding(.horizontal, 20)
+            }
+        }
+        .foregroundColor(foregroundColor)
+        .shadow(color: foregroundColor.opacity(0.3), radius: 5, y: 3)
     }
 }
 
 struct SocialSignupView_Previews: PreviewProvider {
     static var previews: some View {
-        SocialSignupView()
+        Group {
+            SocialSignupView().previewDevice("iPhone 15 Pro")
+            SocialSignupView().previewDevice("iPad Pro (11-inch) (5th generation)")
+        }
     }
 }

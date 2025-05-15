@@ -8,66 +8,74 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @State var showSignIn: Bool = false
-    @State var showSignUp: Bool = false
-    
+    @State private var navigationPath = NavigationPath()
+
+    enum Destination: Hashable {
+        case signUp
+        case signIn
+    }
+
     var body: some View {
-        ZStack {
-            Image("welcome_screen")
-                .resizable()
-                .scaledToFill()
-                .frame(width: .screenHeight, height: .screenHeight)
-            
-            VStack {
-                Image("app_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: .widthPer(per: 0.5))
-                    .padding(.top, .topInsets + 8)
-                
-                Spacer()
-                
-                Text("FromScroobles")
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20)
-                    .foregroundColor(.white)
-                    .padding(.bottom, 30)
-                
-                PrimaryButton(title: "Get Started", onPressed: {
-                    showSignUp.toggle()
-                }) 
-                .background( NavigationLink(destination: SocialSignupView(), isActive: $showSignUp, label: {
-                    EmptyView()
-                }) )
-                .padding(.bottom, 15)
-                
-                SecondaryButton(title: "I have an account", onPressed: {
-                    showSignIn.toggle()
-                })
-                {
-                    
-                } label: {
-                    ZStack{
-                        Image("primary_btn")
+        NavigationStack(path: $navigationPath) {
+            GeometryReader { geometry in
+                ZStack {
+                    Image("welcome_screen")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+
+                    VStack(spacing: geometry.size.height * 0.02) {
+                        Spacer(minLength: geometry.safeAreaInsets.top + 30)
+
+                        Image("app_logo")
                             .resizable()
-                            .scaledToFill()
+                            .scaledToFit()
+                            .frame(width: geometry.size.width * 0.5)
+                            .padding(.top, 10)
+
+                        Spacer()
+
+                        Text("FromScroobles")
+                            .font(.system(size: geometry.size.width * 0.045, weight: .medium))
+                            .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
-                            .frame(width: .screenWidth, height: 48)
-                        
-                        Text("Get Started")
-                            .padding(.horizontal, 20)
+                            .foregroundColor(.white)
+
+                        PrimaryButton(title: "Get Started") {
+                            navigationPath.append(Destination.signUp)
+                        }
+                        .padding(.bottom, 15)
+
+                        SecondaryButton(title: "I have an account") {
+                            navigationPath.append(Destination.signIn)
+                        }
+                        .padding(.bottom, geometry.safeAreaInsets.bottom + 20)
                     }
-                    .padding(.bottom, .bottomInsets)
+                    .frame(width: geometry.size.width)
+                }
+                .ignoresSafeArea()
+            }
+            .navigationBarHidden(true)
+            .navigationDestination(for: Destination.self) { destination in
+                switch destination {
+                case .signUp:
+                    SocialSignupView()
+                case .signIn:
+                    SignInView()
                 }
             }
         }
-        
-        .ignoresSafeArea()
     }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        Group {
+            WelcomeView()
+                .previewDevice("iPhone 15 Pro")
+            WelcomeView()
+                .previewDevice("iPad Pro (11-inch) (5th generation)")
+        }
     }
 }
