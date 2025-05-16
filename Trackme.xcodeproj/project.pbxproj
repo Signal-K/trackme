@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5A8880D2DD6D7E600A2B5C8 /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */; };
+		B5A8880F2DD6DA5600A2B5C8 /* BudgetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */; };
+		B5A888122DD6DC2D00A2B5C8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */; };
+		B5A888142DD6DC6300A2B5C8 /* WeekStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888132DD6DC6300A2B5C8 /* WeekStore.swift */; };
+		B5A8881A2DD6DDCE00A2B5C8 /* TimeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888192DD6DDCE00A2B5C8 /* TimeDirection.swift */; };
+		B5A888202DD6E12200A2B5C8 /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8881F2DD6E12200A2B5C8 /* WeekHeaderView.swift */; };
+		B5A888222DD6E29500A2B5C8 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888212DD6E29500A2B5C8 /* WeekView.swift */; };
+		B5A888242DD6E42600A2B5C8 /* WeeksTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888232DD6E42600A2B5C8 /* WeeksTabView.swift */; };
+		B5A888262DD6E44D00A2B5C8 /* InfiniteWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888252DD6E44D00A2B5C8 /* InfiniteWeekView.swift */; };
+		B5A888292DD6E47800A2B5C8 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888282DD6E47800A2B5C8 /* CardStack.swift */; };
+		B5A8882C2DD6E49C00A2B5C8 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8882B2DD6E49C00A2B5C8 /* Week.swift */; };
+		B5A8882F2DD6E4E800A2B5C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8882E2DD6E4E800A2B5C8 /* Color+Extension.swift */; };
+		B5A888312DD6E51C00A2B5C8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888302DD6E51C00A2B5C8 /* Date+Extension.swift */; };
+		B5A888332DD6E67A00A2B5C8 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888322DD6E67A00A2B5C8 /* View+Extension.swift */; };
+		B5A888362DD6E6BE00A2B5C8 /* CornerRadiusShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888352DD6E6BE00A2B5C8 /* CornerRadiusShape.swift */; };
+		B5A888392DD6E71000A2B5C8 /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888382DD6E71000A2B5C8 /* CornerRadiusStyle.swift */; };
 		B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD532DD57FC100AAAA10 /* TrackmeApp.swift */; };
 		B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD552DD57FC100AAAA10 /* ContentView.swift */; };
 		B5FBDD582DD57FC200AAAA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FBDD572DD57FC200AAAA10 /* Assets.xcassets */; };
@@ -58,6 +74,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
+		B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRow.swift; sourceTree = "<group>"; };
+		B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		B5A888132DD6DC6300A2B5C8 /* WeekStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStore.swift; sourceTree = "<group>"; };
+		B5A888192DD6DDCE00A2B5C8 /* TimeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDirection.swift; sourceTree = "<group>"; };
+		B5A8881F2DD6E12200A2B5C8 /* WeekHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekHeaderView.swift; sourceTree = "<group>"; };
+		B5A888212DD6E29500A2B5C8 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		B5A888232DD6E42600A2B5C8 /* WeeksTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTabView.swift; sourceTree = "<group>"; };
+		B5A888252DD6E44D00A2B5C8 /* InfiniteWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteWeekView.swift; sourceTree = "<group>"; };
+		B5A888282DD6E47800A2B5C8 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		B5A8882B2DD6E49C00A2B5C8 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		B5A8882E2DD6E4E800A2B5C8 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B5A888302DD6E51C00A2B5C8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B5A888322DD6E67A00A2B5C8 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		B5A888352DD6E6BE00A2B5C8 /* CornerRadiusShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusShape.swift; sourceTree = "<group>"; };
+		B5A888382DD6E71000A2B5C8 /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
 		B5FBDD502DD57FC100AAAA10 /* Trackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBDD532DD57FC100AAAA10 /* TrackmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmeApp.swift; sourceTree = "<group>"; };
 		B5FBDD552DD57FC100AAAA10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +151,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5A888102DD6DC2400A2B5C8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B5A888152DD6DDB000A2B5C8 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888272DD6E46C00A2B5C8 /* CardStack */,
+				B5A888162DD6DDB800A2B5C8 /* InfiniteWeekView */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		B5A888162DD6DDB800A2B5C8 /* InfiniteWeekView */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8882A2DD6E49400A2B5C8 /* Models */,
+				B5A8881D2DD6E11500A2B5C8 /* Views */,
+				B5A888172DD6DDBF00A2B5C8 /* Utils */,
+			);
+			path = InfiniteWeekView;
+			sourceTree = "<group>";
+		};
+		B5A888172DD6DDBF00A2B5C8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888372DD6E70400A2B5C8 /* ViewModifier */,
+				B5A888342DD6E6B400A2B5C8 /* Shapes */,
+				B5A8882D2DD6E4DC00A2B5C8 /* Extensions */,
+				B5A888182DD6DDC500A2B5C8 /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5A888182DD6DDC500A2B5C8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888192DD6DDCE00A2B5C8 /* TimeDirection.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B5A8881D2DD6E11500A2B5C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8881E2DD6E11900A2B5C8 /* Week */,
+				B5A888252DD6E44D00A2B5C8 /* InfiniteWeekView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5A8881E2DD6E11900A2B5C8 /* Week */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8881F2DD6E12200A2B5C8 /* WeekHeaderView.swift */,
+				B5A888212DD6E29500A2B5C8 /* WeekView.swift */,
+				B5A888232DD6E42600A2B5C8 /* WeeksTabView.swift */,
+			);
+			path = Week;
+			sourceTree = "<group>";
+		};
+		B5A888272DD6E46C00A2B5C8 /* CardStack */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888282DD6E47800A2B5C8 /* CardStack.swift */,
+			);
+			path = CardStack;
+			sourceTree = "<group>";
+		};
+		B5A8882A2DD6E49400A2B5C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888132DD6DC6300A2B5C8 /* WeekStore.swift */,
+				B5A8882B2DD6E49C00A2B5C8 /* Week.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5A8882D2DD6E4DC00A2B5C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8882E2DD6E4E800A2B5C8 /* Color+Extension.swift */,
+				B5A888302DD6E51C00A2B5C8 /* Date+Extension.swift */,
+				B5A888322DD6E67A00A2B5C8 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5A888342DD6E6B400A2B5C8 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888352DD6E6BE00A2B5C8 /* CornerRadiusShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		B5A888372DD6E70400A2B5C8 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				B5A888382DD6E71000A2B5C8 /* CornerRadiusStyle.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
 		B5FBDD472DD57FC100AAAA10 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +282,7 @@
 		B5FBDD522DD57FC100AAAA10 /* Trackme */ = {
 			isa = PBXGroup;
 			children = (
+				B5A888152DD6DDB000A2B5C8 /* 3rdParty */,
 				B5FBDD872DD5806E00AAAA10 /* Model */,
 				B5FBDD822DD5803100AAAA10 /* UICommon */,
 				B5FBDD812DD5802C00AAAA10 /* Common */,
@@ -192,6 +333,7 @@
 		B5FBDD7E2DD5800000AAAA10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5A888102DD6DC2400A2B5C8 /* Calendar */,
 				B5FBDDB72DD5B77200AAAA10 /* Budgets */,
 				B5FBDDB42DD5B70800AAAA10 /* MainTab */,
 				B5FBDD842DD5804300AAAA10 /* Home */,
@@ -225,6 +367,7 @@
 				B5FBDDAE2DD5AEA300AAAA10 /* StatusButton.swift */,
 				B5FBDDB02DD5B09700AAAA10 /* SegmentButton.swift */,
 				B5FBDDB22DD5B22000AAAA10 /* UpcomingBillRow.swift */,
+				B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -254,6 +397,7 @@
 			children = (
 				B5FBDDAA2DD5A9B900AAAA10 /* SubscriptionModel.swift */,
 				B5FBDDBA2DD5B7B600AAAA10 /* BudgetModel.swift */,
+				B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,25 +560,41 @@
 			files = (
 				B5FBDDAB2DD5A9B900AAAA10 /* SubscriptionModel.swift in Sources */,
 				B5FBDDAD2DD5AB1600AAAA10 /* ArcShape.swift in Sources */,
+				B5A888122DD6DC2D00A2B5C8 /* CalendarView.swift in Sources */,
+				B5A8880F2DD6DA5600A2B5C8 /* BudgetRow.swift in Sources */,
 				B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */,
 				B5FBDDBB2DD5B7B600AAAA10 /* BudgetModel.swift in Sources */,
+				B5A888202DD6E12200A2B5C8 /* WeekHeaderView.swift in Sources */,
+				B5A8880D2DD6D7E600A2B5C8 /* ArcModel.swift in Sources */,
 				B5FBDDB12DD5B09700AAAA10 /* SegmentButton.swift in Sources */,
+				B5A888312DD6E51C00A2B5C8 /* Date+Extension.swift in Sources */,
 				B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */,
 				B5FBDDB62DD5B71700AAAA10 /* MainTabView.swift in Sources */,
+				B5A888332DD6E67A00A2B5C8 /* View+Extension.swift in Sources */,
 				B5FBDDA92DD5A95400AAAA10 /* HomeView.swift in Sources */,
 				B5FBDD9D2DD59E2B00AAAA10 /* AuthView.swift in Sources */,
 				B5FBDD892DD581F200AAAA10 /* UIExtension.swift in Sources */,
+				B5A888222DD6E29500A2B5C8 /* WeekView.swift in Sources */,
+				B5A888262DD6E44D00A2B5C8 /* InfiniteWeekView.swift in Sources */,
 				B5FBDD922DD58DCD00AAAA10 /* SocialSignupView.swift in Sources */,
+				B5A888392DD6E71000A2B5C8 /* CornerRadiusStyle.swift in Sources */,
 				B5FBDD982DD5977200AAAA10 /* SignInView.swift in Sources */,
 				B5FBDD942DD5927B00AAAA10 /* SignupView.swift in Sources */,
 				B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */,
+				B5A888242DD6E42600A2B5C8 /* WeeksTabView.swift in Sources */,
 				B5FBDD9B2DD59DA900AAAA10 /* Supabase.swift in Sources */,
+				B5A8881A2DD6DDCE00A2B5C8 /* TimeDirection.swift in Sources */,
 				B5FBDDB32DD5B22000AAAA10 /* UpcomingBillRow.swift in Sources */,
 				B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */,
+				B5A888292DD6E47800A2B5C8 /* CardStack.swift in Sources */,
 				B5FBDDAF2DD5AEA300AAAA10 /* StatusButton.swift in Sources */,
 				B5FBDDB92DD5B77D00AAAA10 /* BudgetsView.swift in Sources */,
 				B5FBDD962DD5930700AAAA10 /* RoundTextField.swift in Sources */,
+				B5A888142DD6DC6300A2B5C8 /* WeekStore.swift in Sources */,
+				B5A888362DD6E6BE00A2B5C8 /* CornerRadiusShape.swift in Sources */,
 				B5FBDD8B2DD584B500AAAA10 /* WelcomeView.swift in Sources */,
+				B5A8882F2DD6E4E800A2B5C8 /* Color+Extension.swift in Sources */,
+				B5A8882C2DD6E49C00A2B5C8 /* Week.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

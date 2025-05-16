@@ -12,13 +12,18 @@ struct MainTabView: View {
     
     var body: some View {
         ZStack {
-            is (selectTab == 0) {
+            if (selectTab == 0) {
                 HomeView()
                     .frame(width: .screenWidth, height: .screenHeight)
             }
             
             if (selectTab == 1) {
                 BudgetsView()
+                    .frame(width: .screenWidth, height: .screenHeight)
+            }
+            
+            if (selectTab == 2) {
+                CalendarView()
                     .frame(width: .screenWidth, height: .screenHeight)
             }
         }
