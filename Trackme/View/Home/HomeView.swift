@@ -11,6 +11,12 @@ struct HomeView: View {
     @State var isSubscription: Bool = true
     @State var subArr: [SubscriptionModel] = [
         SubscriptionModel(dict: ["name": "Sunrise", "icon": "spotify_logo", "price": "55.99"]),
+        SubscriptionModel(dict: ["name": "Grasshoppers Season Ticket", "icon": "u1", "price": "22.99" ])
+    ]
+    @State var expArr: [SubscriptionModel] = [
+        SubscriptionModel(dict: ["name": "Github Premium", "icon": "youtube_logo", "price": "109.99"]),
+        SubscriptionModel(dict: ["name": "SBB Travel Card", "icon": "youtube_logo", "price": "309.99"]),
+        SubscriptionModel(dict: ["name": "Swisscard", "icon": "onedrive_logo", "price": "79.99"]),
     ]
     
     var body: some View {
@@ -104,6 +110,16 @@ struct HomeView: View {
             if(!isSubscription) {
                 LazyVStack(spacing: 15) {
                     ForEach( subArr , id: \.id) { sObj in
+                        UpcomingBillRow(sObj: sObj)
+                    }
+                }
+                
+                .padding(.horizontal, 20)
+            }
+            
+            if (isSubscription) {
+                LazyVStack(spacing: 15) {
+                    ForEach( expArr, id: \.id) { sObj in
                         UpcomingBillRow(sObj: sObj)
                     }
                 }
