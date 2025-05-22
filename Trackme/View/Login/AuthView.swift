@@ -1,58 +1,81 @@
-//
-//  AuthView.swift
-//  Trackme
-//
-//  Created by Liam Arbuckle on 15/5/2025.
-//
-
-import Foundation
 import SwiftUI
-//import Supabase
 
 struct AuthView: View {
-    @State var email = ""
-    @State var isLoading = false
-    @State var result: Result<Void, Error>?
+    @State private var email = ""
+    @State private var password = ""
+    @State private var isLoading = false
+    @State private var result: Result<Void, Error>?
     
     var body: some View {
-        Form {
-            Section {
-                TextField("Email", text: $email)
-                    .textContentType(.emailAddress)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-            }
-            
-            Section {
-                Button("Sign in") {
-                    signInButtonTapped()
+        ScrollView {
+            VStack(spacing: 24) {
+                Spacer()
+                    .frame(height: 60)
+                
+                Image("app_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                
+                Text("Sign in to 'TrackMe'")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.white)
+                
+                VStack(spacing: 16) {
+                    CustomTextField(placeholder: "Email", text: $email, isSecure: false)
+                    CustomTextField(placeholder: "Password", text: $password, isSecure: true)
+                }
+                
+                if let result {
+                    switch result {
+                    case .success:
+                        Text("Signed in successfully!")
+                            .foregroundColor(.green)
+                    case .failure(let error):
+                        Text(error.localizedDescription)
+                            .foregroundColor(.red)
+                    }
+                }
+                
+                VStack(spacing: 14) {
+                    Button(action: signInButtonTapped) {
+                        Text("Sign In")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.primary10)
+                            .cornerRadius(12)
+                    }
+                    
+                    Button(action: signUpButtonTapped) {
+                        Text("Sign Up")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray60.opacity(0.2))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.gray70, lineWidth: 1)
+                            )
+                            .cornerRadius(12)
+                    }
                 }
                 
                 if isLoading {
                     ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .padding()
                 }
+                
+                Spacer()
             }
-            
-            if let result {
-                Section {
-                    switch result {
-                    case .success:
-                        Text("Check your inbox")
-                    case .failure(let error):
-                        Text(error.localizedDescription).foregroundStyle(.red)
-                    }
-                }
-            }
+            .padding(.horizontal, 24)
+            .padding(.top, .topInsets)
         }
-        .onOpenURL(perform: { url in
-            Task {
-                do {
-                    try await supabase.auth.session(from: url)
-                } catch {
-                    self.result = .failure(error)
-                }
-            }
-        })
+        
+        .background(Color.grayC)
+        .ignoresSafeArea()
     }
     
     func signInButtonTapped() {
@@ -60,10 +83,20 @@ struct AuthView: View {
             isLoading = true
             defer { isLoading = false }
             do {
-                try await supabase.auth.signInWithOTP(
-                    email: email,
-                    redirectTo: URL(string: "io.supabase.user-management://login-callback")
-                )
+                try await supabase.auth.signIn(email: email, password: password)
+                result = .success(())
+            } catch {
+                result = .failure(error)
+            }
+        }
+    }
+    
+    func signUpButtonTapped() {
+        Task {
+            isLoading = true
+            defer { isLoading = false }
+            do {
+                try await supabase.auth.signUp(email: email, password: password)
                 result = .success(())
             } catch {
                 result = .failure(error)

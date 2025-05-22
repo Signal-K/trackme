@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B5A3E9392DE0754C0035FC5A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5A3E9382DE0754C0035FC5A /* Supabase */; };
+		B5A3E93B2DE09B950035FC5A /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3E93A2DE09B950035FC5A /* BottomTabBar.swift */; };
+		B5A3E93D2DE09E2A0035FC5A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3E93C2DE09E2A0035FC5A /* CustomTextField.swift */; };
+		B5A3E9402DE0A30B0035FC5A /* IncomeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3E93F2DE0A30B0035FC5A /* IncomeIndex.swift */; };
+		B5A3E9422DE0A9C20035FC5A /* AddIncomeBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3E9412DE0A9C20035FC5A /* AddIncomeBucket.swift */; };
 		B5A8880D2DD6D7E600A2B5C8 /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */; };
 		B5A8880F2DD6DA5600A2B5C8 /* BudgetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */; };
 		B5A888122DD6DC2D00A2B5C8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */; };
@@ -90,6 +94,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5A3E93A2DE09B950035FC5A /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		B5A3E93C2DE09E2A0035FC5A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B5A3E93F2DE0A30B0035FC5A /* IncomeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeIndex.swift; sourceTree = "<group>"; };
+		B5A3E9412DE0A9C20035FC5A /* AddIncomeBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeBucket.swift; sourceTree = "<group>"; };
 		B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcModel.swift; sourceTree = "<group>"; };
 		B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRow.swift; sourceTree = "<group>"; };
 		B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -188,6 +196,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A3E93E2DE0A3010035FC5A /* Buckets */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3E93F2DE0A30B0035FC5A /* IncomeIndex.swift */,
+				B5A3E9412DE0A9C20035FC5A /* AddIncomeBucket.swift */,
+			);
+			path = Buckets;
 			sourceTree = "<group>";
 		};
 		B5A888102DD6DC2400A2B5C8 /* Calendar */ = {
@@ -405,6 +422,7 @@
 		B5FBDD7E2DD5800000AAAA10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5A3E93E2DE0A3010035FC5A /* Buckets */,
 				B5A888562DD740C200A2B5C8 /* SubscriptionInfo */,
 				B5A888522DD73D6500A2B5C8 /* Add */,
 				B5A888432DD72FB600A2B5C8 /* Settings */,
@@ -451,6 +469,8 @@
 				B5A8884C2DD734CC00A2B5C8 /* IconItemSwitchRow.swift */,
 				B5A8884E2DD7356D00A2B5C8 /* ItemRow.swift */,
 				B5A888502DD7369E00A2B5C8 /* SubscriptionHomeRow.swift */,
+				B5A3E93A2DE09B950035FC5A /* BottomTabBar.swift */,
+				B5A3E93C2DE09E2A0035FC5A /* CustomTextField.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -655,6 +675,9 @@
 				B5FBDD902DD58D0B00AAAA10 /* SecondaryButton.swift in Sources */,
 				B5A888452DD72FC000A2B5C8 /* SettingsView.swift in Sources */,
 				B5A888492DD731B700A2B5C8 /* CarouselView.swift in Sources */,
+				B5A3E9402DE0A30B0035FC5A /* IncomeIndex.swift in Sources */,
+				B5A3E93D2DE09E2A0035FC5A /* CustomTextField.swift in Sources */,
+				B5A3E9422DE0A9C20035FC5A /* AddIncomeBucket.swift in Sources */,
 				B5FBDDBB2DD5B7B600AAAA10 /* BudgetModel.swift in Sources */,
 				B5A8884D2DD734CC00A2B5C8 /* IconItemSwitchRow.swift in Sources */,
 				B5A8883B2DD6E92700A2B5C8 /* CreditCardModel.swift in Sources */,
@@ -677,6 +700,7 @@
 				B5A8884F2DD7356D00A2B5C8 /* ItemRow.swift in Sources */,
 				B5A888392DD6E71000A2B5C8 /* CornerRadiusStyle.swift in Sources */,
 				B5FBDD982DD5977200AAAA10 /* SignInView.swift in Sources */,
+				B5A3E93B2DE09B950035FC5A /* BottomTabBar.swift in Sources */,
 				B5FBDD942DD5927B00AAAA10 /* SignupView.swift in Sources */,
 				B5A888542DD73D7300A2B5C8 /* AddSubscriptionView.swift in Sources */,
 				B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */,

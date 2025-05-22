@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct CustomTextField: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    var placeholder: String
+    @Binding var text: String
+    var isSecure: Bool = false
 
-#Preview {
-    CustomTextField()
+    var body: some View {
+        Group {
+            if isSecure {
+                SecureField(placeholder, text: $text)
+            } else {
+                TextField(placeholder, text: $text)
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+            }
+        }
+        .padding()
+        .background(Color.gray70.opacity(0.2))
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.gray70, lineWidth: 1)
+        )
+        .cornerRadius(12)
+        .foregroundColor(.white)
+    }
 }

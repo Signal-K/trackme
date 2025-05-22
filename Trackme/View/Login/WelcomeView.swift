@@ -8,61 +8,27 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @State private var navigationPath = NavigationPath()
-
-    enum Destination: Hashable {
-        case signUp
-        case signIn
-    }
+    @State private var isAuthenticated = false
+    @State private var isProfileComplete = false
 
     var body: some View {
-        NavigationStack(path: $navigationPath) {
-            GeometryReader { geometry in
-                ZStack {
-                    Image("welcome_screen")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geometry.size.width, height: geometry.size.height)
-                        .clipped()
-
-                    VStack(spacing: geometry.size.height * 0.02) {
-                        Spacer(minLength: geometry.safeAreaInsets.top + 30)
-
-                        Image("app_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: geometry.size.width * 0.5)
-                            .padding(.top, 10)
-
-                        Spacer()
-
-                        Text("FromScroobles")
-                            .font(.system(size: geometry.size.width * 0.045, weight: .medium))
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 20)
-                            .foregroundColor(.white)
-
-                        PrimaryButton(title: "Get Started") {
-                            navigationPath.append(Destination.signUp)
-                        }
-                        .padding(.bottom, 15)
-
-                        SecondaryButton(title: "I have an account") {
-                            navigationPath.append(Destination.signIn)
-                        }
-                        .padding(.bottom, geometry.safeAreaInsets.bottom + 20)
-                    }
-                    .frame(width: geometry.size.width)
+        Group {
+            if isAuthenticated {
+                if isProfileComplete {
+                    MainTabView()
+                } else {
+                    ProfileView(onProfileUpdated: {
+                        isProfileComplete = true
+                    })
                 }
-                .ignoresSafeArea()
+            } else {
+                AuthView()
             }
-            .navigationBarHidden(true)
-            .navigationDestination(for: Destination.self) { destination in
-                switch destination {
-                case .signUp:
-                    SocialSignupView()
-                case .signIn:
-                    SignInView()
+        }
+        .task {
+            for await state in supabase.auth.authStateChanges {
+                if [.initialSession, .signedIn, .signedOut].contains(state.event) {
+                    isAuthenticated = state.session != nil
                 }
             }
         }
