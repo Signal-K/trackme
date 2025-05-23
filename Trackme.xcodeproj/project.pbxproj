@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5A3E9392DE0754C0035FC5A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5A3E9382DE0754C0035FC5A /* Supabase */; };
 		B5A8880D2DD6D7E600A2B5C8 /* ArcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */; };
 		B5A8880F2DD6DA5600A2B5C8 /* BudgetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8880E2DD6DA5600A2B5C8 /* BudgetRow.swift */; };
 		B5A888122DD6DC2D00A2B5C8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888112DD6DC2D00A2B5C8 /* CalendarView.swift */; };
@@ -35,6 +36,10 @@
 		B5A888542DD73D7300A2B5C8 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888532DD73D7300A2B5C8 /* AddSubscriptionView.swift */; };
 		B5A888582DD740D100A2B5C8 /* SubscriptionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888572DD740D100A2B5C8 /* SubscriptionInfoView.swift */; };
 		B5A8885A2DD7448B00A2B5C8 /* UIStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A888592DD7448A00A2B5C8 /* UIStateModel.swift */; };
+		B5C522942DE05E5D00D78996 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C522932DE05E5D00D78996 /* Supabase.swift */; };
+		B5C522982DE05FBE00D78996 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C522972DE05FBE00D78996 /* ProfileView.swift */; };
+		B5C5229A2DE062A400D78996 /* SupabaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C522992DE062A400D78996 /* SupabaseModels.swift */; };
+		B5C5229C2DE066F700D78996 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C5229B2DE066F700D78996 /* AppView.swift */; };
 		B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD532DD57FC100AAAA10 /* TrackmeApp.swift */; };
 		B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD552DD57FC100AAAA10 /* ContentView.swift */; };
 		B5FBDD582DD57FC200AAAA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FBDD572DD57FC200AAAA10 /* Assets.xcassets */; };
@@ -50,7 +55,6 @@
 		B5FBDD942DD5927B00AAAA10 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD932DD5927B00AAAA10 /* SignupView.swift */; };
 		B5FBDD962DD5930700AAAA10 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD952DD5930700AAAA10 /* RoundTextField.swift */; };
 		B5FBDD982DD5977200AAAA10 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD972DD5977200AAAA10 /* SignInView.swift */; };
-		B5FBDD9B2DD59DA900AAAA10 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */; };
 		B5FBDD9D2DD59E2B00AAAA10 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */; };
 		B5FBDD9F2DD5A8F600AAAA10 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDD9E2DD5A8F600AAAA10 /* Auth */; };
 		B5FBDDA12DD5A8F600AAAA10 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B5FBDDA02DD5A8F600AAAA10 /* Functions */; };
@@ -114,6 +118,10 @@
 		B5A888532DD73D7300A2B5C8 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
 		B5A888572DD740D100A2B5C8 /* SubscriptionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionInfoView.swift; sourceTree = "<group>"; };
 		B5A888592DD7448A00A2B5C8 /* UIStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStateModel.swift; sourceTree = "<group>"; };
+		B5C522932DE05E5D00D78996 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		B5C522972DE05FBE00D78996 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B5C522992DE062A400D78996 /* SupabaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseModels.swift; sourceTree = "<group>"; };
+		B5C5229B2DE066F700D78996 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B5FBDD502DD57FC100AAAA10 /* Trackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBDD532DD57FC100AAAA10 /* TrackmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmeApp.swift; sourceTree = "<group>"; };
 		B5FBDD552DD57FC100AAAA10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,7 +140,6 @@
 		B5FBDD932DD5927B00AAAA10 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		B5FBDD952DD5930700AAAA10 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		B5FBDD972DD5977200AAAA10 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		B5FBDDA82DD5A95400AAAA10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B5FBDDAA2DD5A9B900AAAA10 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 			files = (
 				B5FBDDA32DD5A8F600AAAA10 /* PostgREST in Frameworks */,
 				B5FBDDA12DD5A8F600AAAA10 /* Functions in Frameworks */,
+				B5A3E9392DE0754C0035FC5A /* Supabase in Frameworks */,
 				B5FBDD9F2DD5A8F600AAAA10 /* Auth in Frameworks */,
 				B5FBDDA72DD5A8F600AAAA10 /* Storage in Frameworks */,
 				B5FBDDA52DD5A8F600AAAA10 /* Realtime in Frameworks */,
@@ -175,6 +183,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5A3E9372DE0754C0035FC5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5A888102DD6DC2400A2B5C8 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +337,7 @@
 				B5FBDD632DD57FC200AAAA10 /* TrackmeTests */,
 				B5FBDD6D2DD57FC200AAAA10 /* TrackmeUITests */,
 				B5FBDD512DD57FC100AAAA10 /* Products */,
+				B5A3E9372DE0754C0035FC5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,7 +365,7 @@
 				B5FBDD552DD57FC100AAAA10 /* ContentView.swift */,
 				B5FBDD572DD57FC200AAAA10 /* Assets.xcassets */,
 				B5FBDD592DD57FC200AAAA10 /* Preview Content */,
-				B5FBDD9A2DD59DA900AAAA10 /* Supabase.swift */,
+				B5C522932DE05E5D00D78996 /* Supabase.swift */,
 			);
 			path = Trackme;
 			sourceTree = "<group>";
@@ -447,6 +463,7 @@
 				B5FBDD932DD5927B00AAAA10 /* SignupView.swift */,
 				B5FBDD972DD5977200AAAA10 /* SignInView.swift */,
 				B5FBDD9C2DD59E2B00AAAA10 /* AuthView.swift */,
+				B5C522972DE05FBE00D78996 /* ProfileView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -455,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FBDDA82DD5A95400AAAA10 /* HomeView.swift */,
+				B5C5229B2DE066F700D78996 /* AppView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -466,6 +484,7 @@
 				B5FBDDBA2DD5B7B600AAAA10 /* BudgetModel.swift */,
 				B5A8880C2DD6D7E600A2B5C8 /* ArcModel.swift */,
 				B5A8883A2DD6E92700A2B5C8 /* CreditCardModel.swift */,
+				B5C522992DE062A400D78996 /* SupabaseModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -500,6 +519,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B5C522962DE05EB200D78996 /* PBXTargetDependency */,
 			);
 			name = Trackme;
 			packageProductDependencies = (
@@ -508,6 +528,7 @@
 				B5FBDDA22DD5A8F600AAAA10 /* PostgREST */,
 				B5FBDDA42DD5A8F600AAAA10 /* Realtime */,
 				B5FBDDA62DD5A8F600AAAA10 /* Storage */,
+				B5A3E9382DE0754C0035FC5A /* Supabase */,
 			);
 			productName = Trackme;
 			productReference = B5FBDD502DD57FC100AAAA10 /* Trackme.app */;
@@ -626,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C5229C2DE066F700D78996 /* AppView.swift in Sources */,
 				B5FBDDAB2DD5A9B900AAAA10 /* SubscriptionModel.swift in Sources */,
 				B5FBDDAD2DD5AB1600AAAA10 /* ArcShape.swift in Sources */,
 				B5A888122DD6DC2D00A2B5C8 /* CalendarView.swift in Sources */,
@@ -640,6 +662,7 @@
 				B5A888202DD6E12200A2B5C8 /* WeekHeaderView.swift in Sources */,
 				B5A8880D2DD6D7E600A2B5C8 /* ArcModel.swift in Sources */,
 				B5FBDDB12DD5B09700AAAA10 /* SegmentButton.swift in Sources */,
+				B5C5229A2DE062A400D78996 /* SupabaseModels.swift in Sources */,
 				B5A888312DD6E51C00A2B5C8 /* Date+Extension.swift in Sources */,
 				B5FBDD562DD57FC100AAAA10 /* ContentView.swift in Sources */,
 				B5FBDDB62DD5B71700AAAA10 /* MainTabView.swift in Sources */,
@@ -658,10 +681,11 @@
 				B5A888542DD73D7300A2B5C8 /* AddSubscriptionView.swift in Sources */,
 				B5FBDD8E2DD58B8100AAAA10 /* PrimaryButton.swift in Sources */,
 				B5A888242DD6E42600A2B5C8 /* WeeksTabView.swift in Sources */,
+				B5C522982DE05FBE00D78996 /* ProfileView.swift in Sources */,
 				B5A888422DD726E200A2B5C8 /* CardsView.swift in Sources */,
 				B5A888512DD7369E00A2B5C8 /* SubscriptionHomeRow.swift in Sources */,
-				B5FBDD9B2DD59DA900AAAA10 /* Supabase.swift in Sources */,
 				B5A8881A2DD6DDCE00A2B5C8 /* TimeDirection.swift in Sources */,
+				B5C522942DE05E5D00D78996 /* Supabase.swift in Sources */,
 				B5FBDDB32DD5B22000AAAA10 /* UpcomingBillRow.swift in Sources */,
 				B5FBDD542DD57FC100AAAA10 /* TrackmeApp.swift in Sources */,
 				B5A888472DD730F700A2B5C8 /* IconItemRow.swift in Sources */,
@@ -698,6 +722,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B5C522962DE05EB200D78996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B5C522952DE05EB200D78996 /* Supabase */;
+		};
 		B5FBDD622DD57FC200AAAA10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5FBDD4F2DD57FC100AAAA10 /* Trackme */;
@@ -1011,6 +1039,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B5A3E9382DE0754C0035FC5A /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		B5C522952DE05EB200D78996 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
 		B5FBDD9E2DD5A8F600AAAA10 /* Auth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5FBDD992DD59D8100AAAA10 /* XCRemoteSwiftPackageReference "supabase-swift" */;
